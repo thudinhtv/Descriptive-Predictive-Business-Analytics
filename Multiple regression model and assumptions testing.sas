@@ -55,8 +55,6 @@ run;
 
 
 * Using Proc surveyselect to split data into calibration and validation - split rate is about 70-30*;
-* Dataset located in library name class–change path as needed*;
-* Data set name is Video - change path as needed*;
 * Note sampling rate is 70% given by RATE=0.7, change this to a different number if you do not want 70-30 split*;
 * Note random seed is 12345 - change this to a different number if you want random seed to change*;
 * Note  Flag=1 is Trainning data,, Flag=0 is validation data*;
@@ -85,8 +83,7 @@ Run;
 
 /* Using SBC criteria to select model based on training data
  * Creating MSE and MAPE for both training and validation data
- * Most of the code was first generated via SAS studio and then modified as needed
- */
+ * /
 
 
 proc glmselect data=Exercise.Exe6withFlag outdesign(addinputvars)=Work.reg_design 
